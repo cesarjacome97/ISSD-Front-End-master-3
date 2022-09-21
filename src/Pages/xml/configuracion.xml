@@ -1,0 +1,58 @@
+<config>
+    <tipo_entrada>CONTINUO</tipo_entrada>
+    <campos_entrada>
+        <campo_entrada>FECHA_CARGA | DATETIME | 0 | 0 | 0 | sin_mapeo</campo_entrada>
+        <campo_entrada>REGION | VARCHAR(10) | 1 | 1 | 10 | sin_mapeo</campo_entrada>
+        <campo_entrada>ID_DOMICILIO_RNUM | VARCHAR(12) | 2 | 11 | 22 | sin_mapeo</campo_entrada>
+        <campo_entrada>ID_ESTADO | VARCHAR(2) | 3 | 23 | 24 | sin_mapeo</campo_entrada>
+        <campo_entrada>ESTADO | VARCHAR(20) | 4 | 25 | 44 | nivel1</campo_entrada>
+        <campo_entrada>ID_CIUDAD | VARCHAR(3) | 5 | 45 | 47 | sin_mapeo</campo_entrada>
+        <campo_entrada>CIUDAD | VARCHAR(40) | 6 | 48 | 87 | nivel2</campo_entrada>
+        <campo_entrada>ID_MUNICIPIO | VARCHAR(3) | 7 | 88 | 90 | sin_mapeo</campo_entrada>
+        <campo_entrada>MUNICIPIO | VARCHAR(30) | 8 | 91 | 120 | sin_mapeo</campo_entrada>
+        <campo_entrada>ID_DELEGACION | VARCHAR(3) | 9 | 121 | 123 | sin_mapeo</campo_entrada>
+        <campo_entrada>DELEGACION | VARCHAR(30) | 10 | 124 | 153 | sin_mapeo</campo_entrada>
+        <campo_entrada>ID_COLONIA | VARCHAR(5) | 11 | 154 | 158 | sin_mapeo</campo_entrada>
+        <campo_entrada>COLONIA | VARCHAR(40) | 12 | 159 | 198 | nivel3</campo_entrada>
+        <campo_entrada>CALLE | VARCHAR(45) | 13 | 199 | 243 | nivel5</campo_entrada>
+        <campo_entrada>ID_SUBTITULO | VARCHAR(3) | 14 | 244 | 246 | sin_mapeo</campo_entrada>
+        <campo_entrada>SUBTITULO | VARCHAR(20) | 15 | 247 | 266 | nivel4</campo_entrada>
+        <campo_entrada>ID_ORIENTACION | VARCHAR(2) | 16 | 267 | 268 | sin_mapeo</campo_entrada>
+        <campo_entrada>ORIENTACION | VARCHAR(20) | 17 | 269 | 288 | sin_mapeo</campo_entrada>
+        <campo_entrada>NUMERO | INT(7) | 18 | 289 | 295 | nivel6</campo_entrada>
+        <campo_entrada>SUBDESCRIPCION | VARCHAR(1) | 19 | 296 | 296 | sin_mapeo</campo_entrada>
+        <campo_entrada>ENTRE_CALLE_1 | VARCHAR(45) | 20 | 297 | 341 | sin_mapeo</campo_entrada>
+        <campo_entrada>ENTRE_CALLE_2 | VARCHAR(45) | 21 | 342 | 386 | sin_mapeo</campo_entrada>
+        <campo_entrada>LOTE | VARCHAR(5) | 22 | 387 | 391 | sin_mapeo</campo_entrada>
+        <campo_entrada>MANZANA | VARCHAR(5) | 23 | 392 | 396 | sin_mapeo</campo_entrada>
+        <campo_entrada>ID_CALIFICADOR | VARCHAR(5) | 24 | 397 | 401 | sin_mapeo</campo_entrada>
+        <campo_entrada>CALIFICADOR | VARCHAR(20) | 25 | 402 | 421 | sin_mapeo</campo_entrada>
+        <campo_entrada>SUBNUMERO | VARCHAR(7) | 26 | 422 | 428 | sin_mapeo</campo_entrada>
+        <campo_entrada>ID_EDIFICIO | VARCHAR(5) | 27 | 429 | 433 | sin_mapeo</campo_entrada>
+        <campo_entrada>EDIFICIO | VARCHAR(20) | 28 | 434 | 453 | sin_mapeo</campo_entrada>
+        <campo_entrada>DEPARTAMENTO | VARCHAR(7) | 29 | 454 | 460 | sin_mapeo</campo_entrada>
+        <campo_entrada>TERMINAL | VARCHAR(20) | 30 | 461 | 480 | sin_mapeo</campo_entrada>
+        <campo_entrada>DISTRITO | VARCHAR(20) | 31 | 481 | 500 | sin_mapeo</campo_entrada>
+        <campo_entrada>CODIGO_POSTAL | INT(9) | 32 | 501 | 509 | sin_mapeo</campo_entrada>
+        <campo_entrada>CODIGO_DEL_ESTADO | INT(5) | 33 | 510 | 514 | sin_mapeo</campo_entrada>
+        <campo_entrada>COORD_LONGITUD | VARCHAR(20) | 34 | 515 | 534 | longitud</campo_entrada>
+        <campo_entrada>COORD_LATITUD | VARCHAR(20) | 35 | 535 | 554 | latitud</campo_entrada>
+        <campo_entrada>TERMINAL_LATITUD | VARCHAR(20) | 36 | 555 | 574 | lat_cliente</campo_entrada>
+        <campo_entrada>TERMINAL_LONGITUD | VARCHAR(20) | 37 | 575 | 594 | long_cliente</campo_entrada>
+        <campo_entrada>TIPO_TERMINAL | VARCHAR(1) | 38 | 595 | 595 | sin_mapeo</campo_entrada>
+    </campos_entrada>
+    <campos_salida>
+        <campo_salida>EDO_NORMALIZACION | VARCHAR(1) | 39 | 596 | 596 | sin_mapeo</campo_salida>
+        <campo_salida>METODO_NORMALIZACION | VARCHAR(1) | 40 | 597 | 597 | sin_mapeo</campo_salida>
+        <campo_salida>CODIGO_CORRECCION | VARCHAR(10) | 41 | 598 | 607 | sin_mapeo</campo_salida>
+        <campo_salida>ID_SSD | VARCHAR(20) | 42 | 608 | 627 | sin_mapeo</campo_salida>
+        <campo_salida>ESTADO_salida | VARCHAR(20) | 4 | 25 | 44 | nivel1</campo_salida>
+        <campo_salida>CIUDAD_salida | VARCHAR(40) | 6 | 48 | 87 | nivel2</campo_salida>
+        <campo_salida>COLONIA_salida | VARCHAR(40) | 12 | 159 | 198 | nivel3</campo_salida>
+        <campo_salida>CALLE_salida | VARCHAR(45) | 13 | 199 | 243 | nivel5</campo_salida>
+        <campo_salida>SUBTITULO_salida | VARCHAR(20) | 15 | 247 | 266 | nivel4</campo_salida>
+        <campo_salida>NUMERO_salida | INT(7) | 18 | 289 | 295 | nivel6</campo_salida>
+        <campo_salida>COORD_LONGITUD_salida | VARCHAR(20) | 34 | 515 | 534 | longitud</campo_salida>
+        <campo_salida>COORD_LATITUD_salida | VARCHAR(20) | 35 | 535 | 554 | latitud</campo_salida>
+    </campos_salida>
+</config>
